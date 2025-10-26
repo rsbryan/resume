@@ -159,29 +159,7 @@ export default async function Page() {
               </CardHeader>
               <CardContent className="mt-2">{education.degree}</CardContent>
               <CardContent className="mt-2"><span className="font-semibold">Majors:</span> {education.major} | <span className="font-semibold">Minor:</span> {education.minor}</CardContent>
-              <CardContent className="mt-2"><span className="font-semibold">GPA:</span> {education.gpa} | <span className="font-semibold">Honors:</span> {education.honors}</CardContent>
-            </Card>
-          );
-        })}
-      </Section>
-      <Section>
-        <h2 className="text-xl font-bold">Certifications</h2>
-        {RESUME_DATA.certifications.map((certification) => {
-          return (
-            <Card key={certification.name}>
-              <CardHeader>
-                <div className="flex items-center justify-between gap-x-2 text-base">
-                  <h3 className="font-semibold leading-none">
-                    {certification.name}
-                  </h3>
-                  <div className="text-sm tabular-nums text-gray-500">
-                    {certification.year}
-                  </div>
-                </div>
-              </CardHeader>
-              <CardContent className="mt-2">
-                {certification.content}
-              </CardContent>
+              <CardContent className="mt-2"><span className="font-semibold">GPA:</span> {education.gpa}</CardContent>
             </Card>
           );
         })}
