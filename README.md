@@ -1,1 +1,1 @@
-My virtual resume and personal website :)
+my online resume and portfolio :)
