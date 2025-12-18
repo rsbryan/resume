@@ -13,12 +13,12 @@ export const RESUME_DATA = {
   initials: "SB",
   location: "San Diego, CA",
   locationLink: "https://www.google.com/maps/place/San+Diego+CA",
-  about: "Community Engineering Intern at Browserbase",
+  about: "prev @ browserbase",
   summary:
     "Computer Science student at SDSU with a passion for Machine Learning and Neuroscience, browser automation, and building dev tools. Currently cooking on AI agents and web automation at Browserbase.",
   avatarUrl: "https://avatars.githubusercontent.com/rsbryan",
   personalWebsiteUrl: "https://stevenbryan.vercel.app",
-  contact: {
+  contact:  {
     social: [
       {
         name: "GitHub",
@@ -56,12 +56,12 @@ export const RESUME_DATA = {
       company: "Browserbase",
       link: "https://www.browserbase.com",
       badges: [],
-      title: "Community Engineering Intern",
+      title: "Software Engineer Intern",
       logo: ParabolLogo,
       start: "Aug 2025",
-      end: "Current",
+      end: "Nov 2025",
       description:
-        "Shipped user-facing demos and example automations on Stagehand+Browserbase; authored social promo threads/posts to drive developer adoption. Co-developed a browser-agent evaluator for unreleased LLMs (task success, E2E latency, failure modes); produced executive-ready benchmarks for a Fortune 100 hyperscaler and other Tier-1 AI vendors to guide model selection and go-to-market demos. Built showcase integrations with Cerebras and Cartesia for company partner demos to users; owned integration and end-to-end debugging.",
+        "Engineered evaluation infrastructure for Google’s Computer Use Model launch, executing benchmarks against OpenAI and Anthropic models and producing performance data used in launch day marketing materials. Architected an end-to-end task runner using Stagehand and Braintrust to automate browser task execution while capturing comprehensive logs and screenshots across 5,000+ automated test runs. Developed the “Speech to Browser” (SToB) demo with Cartesia, leveraging low-latency voice inference to drive browser actions and showcasing it to strategic partners to validate voice-driven automation use cases. Contributed production code to Stagehand v3, improving API stability and documentation clarity for the open-source community. Scaled the developer community by 28% via technical advocacy on Discord/Slack, providing high-touch support to enterprise customers including engineers at Ramp and Vercel.",
     },
     {
       company: "Digital Innovation Lab",
@@ -70,9 +70,9 @@ export const RESUME_DATA = {
       title: "Software Engineer",
       logo: ParabolLogo,
       start: "Feb 2025",
-      end: "Current",
+      end: "Sept 2025",
       description:
-        "Built multiple production client web apps using React, Node.js, PostgreSQL. Designed RESTful micro-services in Express.js and integrated Auth0, supporting role-based access for 10k+ users. Reduced deployment friction by ~40% with CI/CD pipeline using GitHub Actions. Managed AWS infrastructure (EC2, S3, RDS) for client applications, maintaining 99.9% uptime.",
+        "Delivered production React/Node.js web applications for clients, integrating complex PostgreSQL schemas for data-intensive features. Maintained a 99.9% uptime SLA on AWS infrastructure (EC2, S3, RDS) through load balancing and monitoring configuration. Designed scalable RESTful microservices using Express.js and Auth0, implementing secure role-based access control (RBAC) for client user bases. Optimized the CI/CD deployment workflow using GitHub Actions, reducing build-to-deploy time by 40% and eliminating manual deployment errors.",
     },
     {
       company: "Code Research Lab",
@@ -81,73 +81,59 @@ export const RESUME_DATA = {
       title: "Lead Researcher",
       logo: ClevertechLogo,
       start: "May 2025",
-      end: "Current",
+      end: "Present",
       description:
-        "Developed Machine Learning training pipeline enabling 3× faster model experimentation for internal tooling. Drove technology transfer from research to production, collaborating with Machine Learning focused startups to productionize technical tools. Collaborating with 2+ startups to convert research prototypes into production-ready ML APIs.",
+        "Engineered a custom Machine Learning training pipeline, accelerating internal model experimentation by 300% and significantly reducing iteration cycles. Spearheaded technology transfer initiatives, collaborating with early-stage startups to convert research-grade ML prototypes into production-ready APIs.",
     },
   ],
   skills: [
-    "Python",
-    "C++",
-    "Java",
-    "JavaScript",
-    "TypeScript",
     "Go",
-    "C#",
+    "Python",
+    "Ruby",
+    "TypeScript",
+    "JavaScript",
+    "SQL",
+    "C++",
+    "React Native",
+    "React",
     "Node.js",
-    "Linux/Unix",
-    "Kubernetes",
-    "AWS",
+    "Next.js",
+    "Rails",
+    "AWS (EC2, S3, RDS)",
     "Docker",
+    "PostgreSQL",
+    "MongoDB",
+    "Git",
     "PyTorch",
     "TensorFlow",
-    "Pandas",
-    "NumPy",
-    "Scikit-learn",
-    "PostgreSQL",
-    "React",
-    "Next.js",
-    "Tailwind",
-    "Stagehand",
-    "Browserbase",
-    "Machine Learning",
-    "REST APIs",
-    "CI/CD",
-    "Git",
-    "Express.js",
-    "Auth0",
-    "Agile/Scrum"
+    "Braintrust",
+    "OpenAI/Anthropic APIs",
+    "RAG"
   ],
   projects: [
     {
-      "title": "SToB — Speech-to-Browser (Partner Demo)",
+      "title": "SToB — Speech to Browser Agent",
       "techStack": [
         "Browserbase",
         "Stagehand",
         "Cartesia",
         "Cerebras",
-        "JavaScript",
-        "Voice Recognition",
-        "LLM"
+        "Voice Agent"
       ],
-      "description": "Voice-controlled browser agent that transcribes speech, interprets commands via LLM, and executes browser actions using Stagehand and Browserbase.",
+      "description": "Architected a real-time voice agent combining Cartesia (ASR) and Cerebras (LLM) to translate natural language into executable Stagehand browser commands with sub-second latency. Implemented a persistent session manager preserving authentication state to enable complex multi-step workflows across browser reloads (login, navigation, data extraction).",
       "link": {
         "label": "View on GitHub",
         "href": "https://github.com/rsbryan/stob"
       }
     },
     {
-      "title": "ModelScript — Machine Learning DSL + Compiler",
+      "title": "ModelScript — ML Language",
       "techStack": [
         "Python",
         "TensorFlow",
-        "NumPy",
-        "Compiler Design",
-        "DSL",
-        "Machine Learning",
-        "NLP"
+        "Compiler Design"
       ],
-      "description": "Domain-specific language and compiler that automates neural network prototyping from declarative .ms files to TensorFlow/Keras with built-in REPL CLI.",
+      "description": "Designed a custom domain-specific language (DSL) to democratize machine learning, allowing users to define datasets and training logic in plain-English syntax. Built a compiler from scratch translating simplified commands into production-ready TensorFlow code, significantly reducing the barrier to entry for ML prototyping.",
       "link": {
         "label": "View on GitHub",
         "href": "https://github.com/rsbryan/ModelScript"
