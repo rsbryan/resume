@@ -1,8 +1,4 @@
 import {
-  ClevertechLogo,
-  ParabolLogo,
-} from "@/images/logos";
-import {
   GitHubIcon,
   LinkedInIcon,
   XIcon,
@@ -57,7 +53,6 @@ export const RESUME_DATA = {
       link: "https://www.browserbase.com",
       badges: [],
       title: "Software Engineer Intern",
-      logo: ParabolLogo,
       start: "Aug 2025",
       end: "Nov 2025",
       description:
@@ -68,7 +63,6 @@ export const RESUME_DATA = {
       link: "https://www.sdsu.edu",
       badges: [],
       title: "Software Engineer",
-      logo: ParabolLogo,
       start: "Feb 2025",
       end: "Sept 2025",
       description:
@@ -79,11 +73,10 @@ export const RESUME_DATA = {
       link: "https://www.sdsu.edu",
       badges: [],
       title: "Lead Researcher",
-      logo: ClevertechLogo,
       start: "May 2025",
       end: "Present",
       description:
-        "Engineered a custom Machine Learning training pipeline, accelerating internal model experimentation by 300% and significantly reducing iteration cycles. Spearheaded technology transfer initiatives, collaborating with early-stage startups to convert research-grade ML prototypes into production-ready APIs.",
+        "Engineered a custom Machine Learning training pipeline that cut experiment iteration cycles to roughly a quarter of what they were. Spearheaded technology transfer initiatives, collaborating with early-stage startups to convert research-grade ML prototypes into production-ready APIs.",
     },
   ],
   skills: [
@@ -139,19 +132,6 @@ export const RESUME_DATA = {
       "link": {
         "label": "View on GitHub",
         "href": "https://github.com/rsbryan/stob"
-      }
-    },
-    {
-      "title": "ModelScript — ML Language",
-      "techStack": [
-        "Python",
-        "TensorFlow",
-        "Compiler Design"
-      ],
-      "description": "Designed a custom domain-specific language (DSL) to democratize machine learning, allowing users to define datasets and training logic in plain-English syntax. Built a compiler from scratch translating simplified commands into production-ready TensorFlow code, significantly reducing the barrier to entry for ML prototyping.",
-      "link": {
-        "label": "View on GitHub",
-        "href": "https://github.com/rsbryan/ModelScript"
       }
     },
     {
