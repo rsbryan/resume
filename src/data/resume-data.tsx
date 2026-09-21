@@ -15,9 +15,9 @@ export const RESUME_DATA = {
   locationLink: "https://www.google.com/maps/place/San+Diego+CA",
   about: "prev @ browserbase",
   summary:
-    "Computer Science student at SDSU with a passion for Machine Learning and Neuroscience, browser automation, and building dev tools. Currently cooking on AI agents and web automation at Browserbase.",
+    "Computer Science student at SDSU, graduating May 2027, with a research focus in machine learning. Most recently I built evaluation infrastructure at Browserbase for Google's Computer Use model launch. Right now I'm shipping The Lifting App, an iOS strength tracker with an AI coach, to the App Store.",
   avatarUrl: "https://avatars.githubusercontent.com/rsbryan",
-  personalWebsiteUrl: "https://stevenbryan.vercel.app",
+  personalWebsiteUrl: "https://stevenbryanc.vercel.app",
   contact:  {
     social: [
       {
@@ -112,6 +112,21 @@ export const RESUME_DATA = {
   ],
   projects: [
     {
+      "title": "The Lifting App — AI Strength Coach",
+      "techStack": [
+        "React Native",
+        "TypeScript",
+        "Swift",
+        "Supabase",
+        "Claude API"
+      ],
+      "description": "Shipped a full-stack iOS training platform to TestFlight: a React Native client, a Postgres backend with row-level security on every table, and a pure domain layer gated by 600+ unit tests in CI. The AI coach runs on Claude tool use through serverless edge functions to draft and revise complete training programs, with validators that repair malformed model output and feed tool errors back for self-correction. Native Swift Live Activities and home-screen widgets sync through App Groups, and an over-the-air pipeline ships JavaScript updates without an App Store release.",
+      "link": {
+        "label": "theliftingapp.com",
+        "href": "https://theliftingapp.com"
+      }
+    },
+    {
       "title": "SToB — Speech to Browser Agent",
       "techStack": [
         "Browserbase",
@@ -138,6 +153,17 @@ export const RESUME_DATA = {
         "label": "View on GitHub",
         "href": "https://github.com/rsbryan/ModelScript"
       }
+    },
+    {
+      "title": "Multi-OS Startup Infrastructure",
+      "techStack": [
+        "Linux/BSD",
+        "Ansible",
+        "Docker",
+        "OpenLDAP",
+        "Proxmox"
+      ],
+      "description": "Architected a six-node network across OpenBSD, FreeBSD, Linux, Solaris, and AIX to simulate a scaling startup environment. Established a private certificate authority and an OpenLDAP directory for centralized encrypted authentication, deployed BIND9 DNS, a Sendmail and Dovecot mail server, cross-platform NFS sharing, and a Docker and Nginx web stack, then automated configuration with Ansible and implemented physical-to-virtual disaster recovery on Proxmox."
     },
   ],
   students: [],
