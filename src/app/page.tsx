@@ -6,6 +6,8 @@ import { GlobeIcon, MailIcon, PhoneIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { RESUME_DATA } from "@/data/resume-data";
 import { ProjectCard } from "@/components/project-card";
+import { ProjectShowcase } from "@/components/showcase/project-showcase";
+import { OTHER_PROJECTS } from "@/data/showcase";
 
 export default async function Page() {
   return (
@@ -112,7 +114,23 @@ export default async function Page() {
       </Section>
       <Section>
         <h2 className="text-xl font-bold">Projects</h2>
-        <div className="-mx-3 grid grid-cols-1 gap-3 print:grid-cols-3 print:gap-2 md:grid-cols-2 lg:grid-cols-3">
+        <div className="print:hidden">
+          <ProjectShowcase />
+        </div>
+        {OTHER_PROJECTS.length > 0 && (
+          <div className="-mx-3 mt-2 grid grid-cols-1 gap-3 print:hidden md:grid-cols-2">
+            {OTHER_PROJECTS.map((project) => (
+              <ProjectCard
+                key={project.title}
+                title={project.title}
+                description={project.description}
+                tags={project.techStack}
+                link={"link" in project ? project.link.href : undefined}
+              />
+            ))}
+          </div>
+        )}
+        <div className="-mx-3 hidden grid-cols-1 gap-3 print:grid print:grid-cols-3 print:gap-2">
           {RESUME_DATA.projects.map((project) => {
             return (
               <ProjectCard

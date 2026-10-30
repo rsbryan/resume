@@ -47,9 +47,9 @@ export default function RootLayout({
             })),
           ]}
         />
+        <Analytics />
+        <SpeedInsights />
       </body>
-      <Analytics />
-      <SpeedInsights />
     </html>
   );
 }

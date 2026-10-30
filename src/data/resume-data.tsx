@@ -134,6 +134,64 @@ export const RESUME_DATA = {
       }
     },
     {
+      "title": "SDOPT — South Bay Plume Tracker",
+      "techStack": [
+        "Next.js",
+        "TypeScript",
+        "MapLibre",
+        "Python",
+        "scikit-learn"
+      ],
+      "description": [
+        "Built a live map of where the Tijuana River sewage plume is drifting along the South Bay coast, from HF radar currents, a nearshore wave model, river flow, and county beach status.",
+        "Shows which beaches sit downstream of the plume right now and over the next five days.",
+        "Trained a per-beach model on 16 years of county bacteria samples that reaches 0.84 ROC AUC, against 0.67 for a rain-only baseline."
+      ]
+    },
+    {
+      "title": "Chess Coach — Game Review Extension",
+      "techStack": [
+        "JavaScript",
+        "Chrome Extensions",
+        "Stockfish WASM",
+        "chess.js"
+      ],
+      "description": [
+        "Built a free Chrome extension that reviews every finished chess.com game with Stockfish running locally in the browser.",
+        "Grades each move from Brilliant to Blunder, estimates accuracy and rating, and draws a clickable evaluation graph.",
+        "Lets you drag pieces from any position to test a line, and keeps a history with accuracy trends and opening results."
+      ]
+    },
+    {
+      "title": "PokerLab — Poker Decision Trainer",
+      "techStack": [
+        "Next.js",
+        "TypeScript",
+        "Supabase",
+        "Claude API"
+      ],
+      "description": [
+        "Built a poker trainer that deals realistic 6-max spots and grades each decision from 0 to 100 with Claude.",
+        "Walkthrough mode plays a full hand from preflop to the river, with the other players acting between your moves.",
+        "Added magic-link sign in, saved hands, and a Glicko-2 rating that tracks skill across sessions."
+      ]
+    },
+    {
+      "title": "Vitals — Health and Training Dashboard",
+      "techStack": [
+        "React Native",
+        "Expo",
+        "TypeScript",
+        "HealthKit",
+        "Supabase"
+      ],
+      "description": [
+        "Built an iOS and web app from one Expo codebase that reads Apple Watch data through HealthKit and syncs it to Postgres.",
+        "Generates an Ironman 70.3 plan backward from race day and adjusts it from what the watch records, with every change waiting for approval.",
+        "Scores recovery and sleep against personal 30-day baselines and grades each workout against the plan."
+      ]
+    },
+    {
       "title": "SToB — Speech to Browser",
       "techStack": [
         "Browserbase",
