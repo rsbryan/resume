@@ -2,14 +2,13 @@ import {
   Card,
   CardHeader,
   CardContent,
-  CardDescription,
   CardTitle,
 } from "./ui/card";
 import { Badge } from "./ui/badge";
 
 interface Props {
   title: string;
-  description: string;
+  description: readonly string[];
   tags: readonly string[];
   link?: string;
 }
@@ -36,9 +35,11 @@ export function ProjectCard({ title, description, tags, link }: Props) {
           <div className="hidden font-mono text-xs underline print:visible">
             {link?.replace("https://", "").replace("www.", "").replace("/", "")}
           </div>
-          <CardDescription className="font-mono text-xs">
-            {description}
-          </CardDescription>
+          <ul className="list-disc space-y-2 pl-4 font-mono text-xs leading-relaxed text-muted-foreground">
+            {description.map((point) => (
+              <li key={point}>{point}</li>
+            ))}
+          </ul>
         </div>
       </CardHeader>
       <CardContent className="mt-auto flex">

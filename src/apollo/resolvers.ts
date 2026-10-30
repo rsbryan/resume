@@ -6,6 +6,17 @@ import { RESUME_DATA } from "../data/resume-data";
 export class MeResolver {
   @Query(() => Me)
   me(): Me {
-    return RESUME_DATA as any;
+    // Keep descriptions as strings for existing GraphQL clients.
+    return {
+      ...RESUME_DATA,
+      work: RESUME_DATA.work.map((work) => ({
+        ...work,
+        description: work.description.join(" "),
+      })),
+      projects: RESUME_DATA.projects.map((project) => ({
+        ...project,
+        description: project.description.join(" "),
+      })),
+    } as any;
   }
 }

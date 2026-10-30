@@ -68,22 +68,6 @@ export default async function Page() {
           {RESUME_DATA.summary}
         </p>
       </Section>
-      <Section className="print-force-new-page scroll-mb-16">
-        <h2 className="text-xl font-bold">Projects</h2>
-        <div className="-mx-3 grid grid-cols-1 gap-3 print:grid-cols-3 print:gap-2 md:grid-cols-2 lg:grid-cols-3">
-          {RESUME_DATA.projects.map((project) => {
-            return (
-              <ProjectCard
-                key={project.title}
-                title={project.title}
-                description={project.description}
-                tags={project.techStack}
-                link={"link" in project ? project.link.href : undefined}
-              />
-            );
-          })}
-        </div>
-      </Section>
       <Section>
         <h2 className="text-xl font-bold">Work Experience</h2>
         {RESUME_DATA.work.map((work) => {
@@ -116,11 +100,31 @@ export default async function Page() {
                 <h4 className="font-mono text-sm leading-none">{work.title}</h4>
               </CardHeader>
               <CardContent className="mt-2 text-xs">
-                {work.description}
+                <ul className="list-disc space-y-2 pl-4 leading-relaxed">
+                  {work.description.map((point) => (
+                    <li key={point}>{point}</li>
+                  ))}
+                </ul>
               </CardContent>
             </Card>
           );
         })}
+      </Section>
+      <Section>
+        <h2 className="text-xl font-bold">Projects</h2>
+        <div className="-mx-3 grid grid-cols-1 gap-3 print:grid-cols-3 print:gap-2 md:grid-cols-2 lg:grid-cols-3">
+          {RESUME_DATA.projects.map((project) => {
+            return (
+              <ProjectCard
+                key={project.title}
+                title={project.title}
+                description={project.description}
+                tags={project.techStack}
+                link={"link" in project ? project.link.href : undefined}
+              />
+            );
+          })}
+        </div>
       </Section>
       <Section>
         <h2 className="text-xl font-bold">Skills</h2>
