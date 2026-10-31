@@ -125,7 +125,7 @@ export const SHOWCASE: readonly ShowcaseEntry[] = [
           "The sidebar says which way the plume is drifting, then shows the waves and river flow behind it.",
       },
     ],
-    links: [],
+    links: [{ label: "GitHub", href: "https://github.com/rsbryan/-SDOPT" }],
   },
   {
     slug: "chess-coach",

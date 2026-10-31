@@ -146,7 +146,11 @@ export const RESUME_DATA = {
         "Built a live map of where the Tijuana River sewage plume is drifting along the South Bay coast, from HF radar currents, a nearshore wave model, river flow, and county beach status.",
         "Shows which beaches sit downstream of the plume right now and over the next five days.",
         "Trained a per-beach model on 16 years of county bacteria samples that reaches 0.84 ROC AUC, against 0.67 for a rain-only baseline."
-      ]
+      ],
+      "link": {
+        "label": "View on GitHub",
+        "href": "https://github.com/rsbryan/-SDOPT"
+      }
     },
     {
       "title": "Chess Coach — Game Review Extension",
